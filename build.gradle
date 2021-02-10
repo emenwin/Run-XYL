@@ -3,29 +3,44 @@
 buildscript {
     repositories {
 
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        maven {url 'https://developer.huawei.com/repo/'}
+
         google()
-        mavenLocal()
-        jcenter()
-        maven {
-            url 'https://maven.fabric.io/public'
-        }
+        //jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:4.1.1'
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.30'
         classpath 'com.google.gms:google-services:4.2.0'
-        classpath 'io.fabric.tools:gradle:1.26.1'
+        //classpath 'io.fabric.tools:gradle:1.26.1'
     }
 }
 
 allprojects {
     repositories {
-        google()
-        jcenter()
-        mavenLocal()
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+
+        maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        maven { url 'https://dl.bintray.com/jenly/maven' }
+        maven { url "https://jitpack.io" }
         maven {
-            url 'https://maven.google.com/'
+            url 'http://4thline.org/m2'
         }
+        //hms
+        maven {url 'http://developer.huawei.com/repo/'}
+        google()
+        // jcenter()
     }
 }
 

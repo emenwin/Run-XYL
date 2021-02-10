@@ -49,7 +49,7 @@
             android:value="10000" />
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="f71a28fc9753454aa76d2f2786e58f6c" />
+            android:value="fc5dfceb78d3ed99dbd300641eb86b9a" />
         <!--android:value="cbdd7141fadcda424bc7b2ea3b5f87f0" />-->
         <meta-data
             android:name="BaiduMobAd_APP_ID"

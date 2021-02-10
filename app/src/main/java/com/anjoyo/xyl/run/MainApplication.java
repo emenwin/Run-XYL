@@ -3,13 +3,13 @@ package com.anjoyo.xyl.run;
 import android.app.Activity;
 import android.app.Application;
 
-import com.crashlytics.android.Crashlytics;
+//import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.ads.MobileAds;
 import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;
 
-import io.fabric.sdk.android.Fabric;
+//import io.fabric.sdk.android.Fabric;
 
 public class MainApplication extends Application {
 
@@ -23,7 +23,7 @@ public class MainApplication extends Application {
 		MobclickAgent.setCatchUncaughtExceptions(true);
 
 		MobileAds.initialize(this,"ca-app-pub-6260442262526164~8983367539");
-		Fabric.with(this, new Crashlytics());
+		//Fabric.with(this, new Crashlytics());
 		instance = this;
 	}
 	// 单例模式中获取唯一的MyApplication实例

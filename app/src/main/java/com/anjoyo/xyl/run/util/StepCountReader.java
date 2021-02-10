@@ -108,10 +108,10 @@ public class StepCountReader {
             }
 
             public InsertRequestImpl build() {
-                if (this.a != null && !BuildConfig.FLAVOR.equals(this.a)) {
+                if (this.a != null /*&& !BuildConfig.FLAVOR.equals(this.a)*/) {
                     return new InsertRequestImpl(this.a);
                 }
-                throw new IllegalStateException("No data type or invalid data type is specified");
+                 throw new IllegalStateException("No data type or invalid data type is specified");
             }
         }
 
